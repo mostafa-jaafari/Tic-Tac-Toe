@@ -1,0 +1,103 @@
+:root{
+    --dark-topbar:#ffecc9;
+    --light-topbar:#E68946;
+    --dark-text:#ece9e6;
+    --light-text:#1e1e1e;
+    --light-bg:#ffecc9;
+    --dark-bg:#61300D;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "system-ui";
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.X-O{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    position: relative;
+}
+.Top-Bar{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-topbar);
+    color: var(--light-text);
+    border-radius: 12px;
+    font-size: 1.4em;
+    font-weight: 700;
+}
+.Top-Bar span{
+    color: var(--light-topbar);
+}
+
+.Reset-Btn{
+   width: 100%;
+}
+.Reset-Btn li{
+    width: 100%;
+    height: 100%;
+    background: #000;
+    text-align: center;
+    color: var(--dark-text);
+    border-radius: 50px;
+    list-style: none;
+    padding: 6px 0px;
+    cursor: pointer;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    transition: .3s ease-in-out;
+    display: none;
+}
+.Reset-Btn li:hover{
+    letter-spacing: 6px;
+    font-weight: 700;
+}
+
+.Board{
+    width: 100%;
+    height: 400px;
+    background-color: var(--light-bg);
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 4px;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 4px;
+}
+.item{
+    background-color: var(--dark-bg);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6em;
+    font-weight: 600;
+    cursor: pointer;
+}
+.item:hover{
+    background-color: var(--dark-topbar);
+    color: var(--light-text);
+}
